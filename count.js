@@ -15,7 +15,7 @@ db.defaults({vehicles: []}) // init store
     .write();
 
 // count entries
-var entries = db.get('vehicles').size().value();
+var entriesCount = db.get('vehicles').size().value();
 
 // log number
-console.log('# of entries: ' + entries);
+console.log('# of entries: ' + entriesCount);
