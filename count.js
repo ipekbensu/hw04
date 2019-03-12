@@ -17,5 +17,5 @@ db.defaults({vehicles: []}) // init store
 // count entries
 var entriesCount = db.get('vehicles').size().value();
 
-// log number
+// log
 console.log('# of entries: ' + entriesCount);
