@@ -17,13 +17,13 @@ db.defaults({vehicles: []}) // init store
 // list/count IDs
 var IDs = db.get('vehicles').map('id').value();
 // var IDCount = IDs.length;
-// console.log('IDs: ' + IDs);
-// console.log('# of IDs: ' + IDCount);
 
 // list/count unique IDs
 var uniqueIDs = [...new Set(IDs)];
 var uniqueIDCount = uniqueIDs.length;
 
 // log
+// console.log('IDs: ' + IDs);
+// console.log('# of IDs: ' + IDCount);
 console.log('unique IDs: ' + uniqueIDs);
 console.log('# of unique IDs: ' + uniqueIDCount);
