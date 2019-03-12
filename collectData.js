@@ -34,7 +34,7 @@ function getData(){
         .then(json => {
             data = json.data;
             addVehicles(data);
-            // console.log('run data: ' + data);
+            // console.log('data: ' + data);
             // console.log('database: ' + db.get('vehicles').value());
             count += 1;
             console.log('runs: ' + count);
