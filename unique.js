@@ -14,14 +14,16 @@ var db = low(adapter);
 db.defaults({vehicles: []}) // init store
     .write();
 
-// list IDs
+// list/count IDs
 var IDs = db.get('vehicles').map('id').value();
 // var IDCount = IDs.length;
 // console.log('IDs: ' + IDs);
 // console.log('# of IDs: ' + IDCount);
 
-// list unique IDs
+// list/count unique IDs
 var uniqueIDs = [...new Set(IDs)];
 var uniqueIDCount = uniqueIDs.length;
+
+// log
 console.log('unique IDs: ' + uniqueIDs);
 console.log('# of unique IDs: ' + uniqueIDCount);
