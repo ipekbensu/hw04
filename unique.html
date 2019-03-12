@@ -1,0 +1,38 @@
+<!-- Homework 4: Data mapping for MBTA Route 1 buses
+repo: https://github.com/ipekbensu/hw04 -->
+
+<!-- Part 4: Dropdown unique IDs -->
+
+<html>
+<head>
+    <script type="text/javascript" src="dbEdited.js"></script>
+</head>
+<body>
+    <h1>Select Bus</h1>
+    <select id="dropdown"></select>
+</body>
+<script>
+    // list/count IDs
+    var IDs = [];
+    vehicles.forEach(function(item){
+        IDs.push(item.id);
+    });
+    // var IDCount = IDs.length;
+
+    // list/count unique IDs
+    var uniqueIDs = [...new Set(IDs)];
+    var uniqueIDCount = uniqueIDs.length;
+
+    // log
+    // console.log('IDs: ' + IDs);
+    // console.log('# of IDs: ' + IDCount);
+    console.log('unique IDs: ' + uniqueIDs);
+    console.log('# of unique IDs: ' + uniqueIDCount);
+
+    // add options
+    uniqueIDs.forEach(function(item){
+        var option = '<option value="' + item + '">' + item + '</option>';
+        document.getElementById('dropdown').innerHTML += option;
+    });
+</script>
+</html>
