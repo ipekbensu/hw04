@@ -1,0 +1,23 @@
+{
+  "name": "hw04",
+  "version": "1.0.0",
+  "description": "Homework 4: Data mapping for MBTA Route 1 buses",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ipekbensu/hw04.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ipekbensu/hw04/issues"
+  },
+  "homepage": "https://github.com/ipekbensu/hw04#readme",
+  "dependencies": {
+    "lowdb": "^1.0.0",
+    "node-fetch": "^2.3.0"
+  }
+}
