@@ -44,7 +44,7 @@ repo: https://github.com/ipekbensu/hw04 -->
                 filtered.push(item);
             }
         });
-        return JSON.stringify(filtered);
+        return filtered;
     };
 
     // print
@@ -52,7 +52,7 @@ repo: https://github.com/ipekbensu/hw04 -->
         var selected = document.getElementById('dropdown');
         var input = selected.options[selected.selectedIndex].text;
         var output = filter(vehicles, input);
-        document.getElementById('log').innerHTML = output;
+        document.getElementById('log').innerHTML = JSON.stringify(output);
     };
 </script>
 </html>
